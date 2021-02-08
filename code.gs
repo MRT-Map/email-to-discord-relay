@@ -8,7 +8,7 @@ function checkMail() {
     if (emailThreads[thread].isUnread()) {
 
       var messages = emailThreads[thread].getMessages();
-      for (let message in messages) {//cycle messages in a spceific thread
+      for (let message in messages) {//cycle messages in a specific thread
         if (messages[message].isUnread()) {
           let embed = {
             title: 'You got mail!',
